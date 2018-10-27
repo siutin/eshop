@@ -1,0 +1,42 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "inventory": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "price": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "is_published": {
+      "type": "boolean"
+    },
+    "shop_id": {
+      "type": "number"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "image": {
+      "type": "buffer"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
