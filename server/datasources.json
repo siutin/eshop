@@ -1,1 +1,11 @@
-{}
+{
+  "eshopDevelopment": {
+    "host": "localhost",
+    "port": "3306",
+    "database": "eshop_development",
+    "username": "eshop",
+    "password": "eshopeshop",
+    "name": "eshopDevelopment",
+    "connector": "mysql"
+  }
+}
