@@ -16,5 +16,9 @@
   "Product": {
     "dataSource": "eshopDevelopment",
     "public": true
+  },
+  "ACL": {
+    "dataSource": "eshopDevelopment",
+    "public": false
   }
 }
