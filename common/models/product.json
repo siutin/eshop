@@ -50,6 +50,13 @@
       "principalId": "admin",
       "permission": "ALLOW",
       "property": "post"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "find"
     }
   ],
   "methods": {}
