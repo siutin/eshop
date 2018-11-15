@@ -42,5 +42,9 @@
   "Product": {
     "dataSource": "eshopDevelopment",
     "public": true
+  },
+  "Shop": {
+    "dataSource": "eshopDevelopment",
+    "public": true
   }
 }
