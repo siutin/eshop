@@ -13,12 +13,20 @@
       "./mixins"
     ]
   },
-  "Product": {
+  "User": {
     "dataSource": "eshopDevelopment",
-    "public": true
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    }
+  },
   },
   "ACL": {
     "dataSource": "eshopDevelopment",
     "public": false
+  },
+  "Product": {
+    "dataSource": "eshopDevelopment",
+    "public": true
   }
 }
