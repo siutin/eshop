@@ -53,5 +53,9 @@
     "options": {
       "emailVerificationRequired": true
     }
+  },
+  "ShopStaff": {
+    "dataSource": "eshopDevelopment",
+    "public": true
   }
 }
