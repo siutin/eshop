@@ -20,6 +20,9 @@
       "emailVerificationRequired": true
     }
   },
+  "AccessToken": {
+    "dataSource": "eshopDevelopment",
+    "public": false
   },
   "ACL": {
     "dataSource": "eshopDevelopment",
