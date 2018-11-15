@@ -28,6 +28,17 @@
     "dataSource": "eshopDevelopment",
     "public": false
   },
+  "RoleMapping": {
+    "dataSource": "eshopDevelopment",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "eshopDevelopment",
+    "public": true
+  },
   "Product": {
     "dataSource": "eshopDevelopment",
     "public": true
