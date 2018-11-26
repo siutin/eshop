@@ -51,11 +51,14 @@
     "dataSource": "eshopDevelopment",
     "public": true,
     "options": {
-      "emailVerificationRequired": true
+      "emailVerificationRequired": false
     }
   },
   "ShopStaff": {
     "dataSource": "eshopDevelopment",
-    "public": true
+    "public": true,
+     "options": {
+       "emailVerificationRequired": false
+     }
   }
 }
