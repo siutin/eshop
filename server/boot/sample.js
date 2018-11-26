@@ -4,6 +4,7 @@ module.exports = async function (app) {
 
   const Shop = app.models.Shop
   const ShopStaff = app.models.ShopStaff
+  const ShopMember = app.models.ShopMember
 
   const Role = app.models.Role
   const RoleMapping = app.models.RoleMapping
@@ -30,6 +31,20 @@ module.exports = async function (app) {
   console.log(`isCreated: ${isCreated}`)
   console.log(staff)
 
+  // CREATE MEMBERS ------------------------------------------------------------
+  let member;
+  [member, isCreated] = await ShopMember.findOrCreate({
+    where: {
+      shopId: shop.id,
+      username: 'member01',
+      email: 'member01@example.com',
+    }
+  }, {
+    password: '12345678'
+  })
+
+  console.log(isCreated)
+  console.log(member)
   // CREATE ROLES ------------------------------------------------------------
   let role;
   [err, [role, isCreated]] = await Safe(Role.findOrCreate({
