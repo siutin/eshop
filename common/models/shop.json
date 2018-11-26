@@ -18,7 +18,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "shopStaffs": {
+      "type": "hasMany",
+      "model": "ShopStaff",
+      "foreignKey": "shopId"
+    },
+    "shopMembers": {
+      "type": "hasMany",
+      "model": "ShopMember",
+      "foreignKey": "shopId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
