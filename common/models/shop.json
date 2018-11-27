@@ -15,14 +15,17 @@
     },
     "logo": {
       "type": "buffer"
+    },
+    "staffId": {
+      "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "shopStaffs": {
-      "type": "hasMany",
+    "owner": {
+      "type": "belongsTo",
       "model": "ShopStaff",
-      "foreignKey": "shopId"
+      "foreignKey": "staffId"
     },
     "shopMembers": {
       "type": "hasMany",
