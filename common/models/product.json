@@ -51,24 +51,16 @@
       "permission": "DENY"
     },
     {
-      "accessType": "EXECUTE",
+      "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "$authenticated",
-      "permission": "ALLOW",
-      "property": "find"
+      "permission": "ALLOW"
     },
-     {
-       "accessType": "EXECUTE",
+    {
+       "accessType": "WRITE",
        "principalType": "ROLE",
-       "principalId": "staff",
-       "permission": "ALLOW",
-       "property": "findById"
-     }, {
-       "accessType": "EXECUTE",
-       "principalType": "ROLE",
-       "principalId": "member",
-       "permission": "ALLOW",
-       "property": "findById"
+       "principalId": "$owner",
+       "permission": "ALLOW"
      }
   ],
   "methods": {}
