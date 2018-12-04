@@ -35,7 +35,7 @@
     "products": {
       "type": "hasMany",
       "model": "Product",
-      "foreignKey": "shop_id"
+      "foreignKey": "shopId"
     }
   },
   "acls": [
