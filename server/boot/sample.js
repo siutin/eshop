@@ -30,6 +30,60 @@ module.exports = async function (app) {
   let shop2 = await saveOrThrow(Shop.findOrCreate({ name: 'Samsung' }))
   console.log('shop2:', shop2)
 
+  let product1 = await saveOrThrow(Product.findOrCreate({
+     where: {
+        "name": "iPhone 8",
+        "shop_id": shop1.id
+     }
+  },{
+     "name": "iPhone 8",
+     "shop_id": shop1.id,
+     "inventory": 10,
+     "price": 5199,
+     "is_published": true,
+       "tags": [
+         "phone",
+         "apple"
+       ]
+  }))
+  console.log('product1:', product1)
+
+  let product2 = await saveOrThrow(Product.findOrCreate({
+   where: {
+      "name": "Galaxy J7 Neo",
+      "shopId": shop2.id
+   }
+  }, {
+     "name": "Galaxy J7 Neo",
+     "shopId": shop2.id,
+    "inventory": 10,
+    "price": 1074,
+    "isPublished": true,
+    "tags": [
+      "phone",
+      "apple"
+    ]
+  }))
+  console.log('product2:', product2)
+
+  let product3 = await saveOrThrow(Product.findOrCreate({
+    where: {
+      "name": "Macbook Air",
+      "shopId": shop1.id
+    }
+  }, {
+    "name": "Macbook Air",
+    "shopId": shop1.id,
+    "inventory": 24,
+    "price": 9999,
+    "isPublished": true,
+    "tags": [
+      "laptop",
+      "apple"
+    ]
+  }))
+  console.log('product3:', product3)
+
   // CREATE STAFFS ------------------------------------------------------------
   let staff1 = await saveOrThrow(
     ShopStaff.findOrCreate({
