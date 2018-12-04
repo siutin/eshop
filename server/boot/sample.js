@@ -14,7 +14,7 @@ async function saveOrThrow(fnCall) {
 
 module.exports = async function (app) {
 
-  const Product = app.models.Shop
+  const Product = app.models.Product
   const Shop = app.models.Shop
   const ShopStaff = app.models.ShopStaff
   const ShopMember = app.models.ShopMember
